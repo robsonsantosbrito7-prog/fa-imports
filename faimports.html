@@ -1,0 +1,519 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FA IMPORTS | Camisas de Futebol Premium - Frete Grátis</title>
+    <meta name="description" content="Camisas de futebol linha torcedor e jogador, jaquetas e tênis importados. Preço de atacado, qualidade premium e frete grátis para todo Brasil a partir de 10 peças.">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Roboto, 'Helvetica Neue', sans-serif;
+        }
+
+        body {
+            background: #f0f2f5;
+        }
+
+        .top-bar {
+            background: #0a0a0a;
+            padding: 12px 20px;
+            text-align: center;
+            color: #ffcc00;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+        }
+
+        .header {
+            background: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 3px solid #ffcc00;
+        }
+
+        .logo-area h1 {
+            font-size: 2.5rem;
+            font-weight: 800;
+            letter-spacing: 2px;
+            color: #1a1a2e;
+        }
+
+        .logo-area span {
+            color: #e63946;
+        }
+
+        .tagline {
+            color: #555;
+            margin-top: 8px;
+            font-weight: 500;
+        }
+
+        .hero {
+            background: linear-gradient(135deg, #0b1c2c 0%, #1a3a4f 100%);
+            color: white;
+            text-align: center;
+            padding: 50px 20px;
+        }
+
+        .hero h2 {
+            font-size: 2.2rem;
+            margin-bottom: 15px;
+        }
+
+        .hero .highlight {
+            color: #ffcc00;
+            font-size: 1.6rem;
+            font-weight: bold;
+        }
+
+        .price-badge {
+            background: #e63946;
+            display: inline-block;
+            padding: 10px 25px;
+            border-radius: 40px;
+            font-size: 1.8rem;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+
+        .price-badge small {
+            font-size: 1rem;
+        }
+
+        .diferenciais {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            padding: 50px 20px;
+            background: white;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .card-diff {
+            background: #f8f9fc;
+            padding: 25px 20px;
+            border-radius: 24px;
+            text-align: center;
+            width: 220px;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .card-diff:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-diff .emoji {
+            font-size: 2.5rem;
+        }
+
+        .card-diff h3 {
+            margin: 15px 0 8px;
+            color: #1a3a4f;
+        }
+
+        .produtos {
+            background: #f4f6fa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .produtos h2 {
+            font-size: 2rem;
+            margin-bottom: 30px;
+            color: #0b1c2c;
+        }
+
+        .grid-produtos {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 25px;
+            max-width: 1200px;
+            margin: auto;
+        }
+
+        .prod-item {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            width: 220px;
+            box-shadow: 0 5px 12px rgba(0,0,0,0.1);
+            transition: transform 0.2s;
+        }
+
+        .prod-item:hover {
+            transform: translateY(-5px);
+        }
+
+        .prod-img {
+            width: 100%;
+            height: 160px;
+            background: linear-gradient(135deg, #006600, #002200);
+            border-radius: 16px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 5rem;
+            color: #ffcc00;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .prod-item h4 {
+            margin: 12px 0 5px;
+            color: #1e293b;
+        }
+
+        .prod-item p {
+            font-size: 0.85rem;
+            color: #555;
+            margin-bottom: 10px;
+        }
+
+        .btn-comprar {
+            background: #25D366;
+            color: white;
+            border: none;
+            padding: 10px 16px;
+            border-radius: 40px;
+            margin-top: 8px;
+            cursor: pointer;
+            font-weight: bold;
+            width: 100%;
+            transition: 0.2s;
+        }
+
+        .btn-comprar:hover {
+            background: #1da851;
+        }
+
+        .cta-section {
+            background: linear-gradient(120deg, #128C7E, #25D366);
+            padding: 50px 20px;
+            text-align: center;
+            color: white;
+        }
+
+        .btn-whatsapp {
+            background: white;
+            color: #075E54;
+            padding: 15px 35px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 60px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 10px;
+            transition: 0.2s;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+        }
+
+        .btn-whatsapp:hover {
+            transform: scale(1.02);
+            background: #f0f0f0;
+        }
+
+        .btn-grupo {
+            background: #ffcc00;
+            color: #1a1a2e;
+            padding: 15px 35px;
+            font-size: 1.3rem;
+            font-weight: bold;
+            border-radius: 60px;
+            text-decoration: none;
+            display: inline-block;
+            margin: 15px 10px;
+            transition: 0.2s;
+        }
+
+        .btn-grupo:hover {
+            background: #e6b800;
+            transform: scale(1.02);
+        }
+
+        .original-content {
+            max-width: 1000px;
+            margin: 40px auto;
+            padding: 30px;
+            background: white;
+            border-radius: 32px;
+            line-height: 1.6;
+            color: #1e293b;
+        }
+
+        footer {
+            background: #0b1c2c;
+            color: #94a3b8;
+            text-align: center;
+            padding: 30px;
+            font-size: 0.85rem;
+        }
+
+        .legal-links a {
+            color: #ffcc00;
+            text-decoration: none;
+            margin: 0 12px;
+            cursor: pointer;
+        }
+
+        .legal-links a:hover {
+            text-decoration: underline;
+        }
+
+        .modal {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0,0,0,0.8);
+            z-index: 1000;
+            overflow-y: auto;
+        }
+        .modal-content {
+            background: white;
+            max-width: 800px;
+            margin: 40px auto;
+            padding: 30px;
+            border-radius: 24px;
+            position: relative;
+        }
+        .close-modal {
+            position: absolute;
+            top: 20px;
+            right: 25px;
+            font-size: 28px;
+            cursor: pointer;
+            color: #666;
+        }
+        .close-modal:hover {
+            color: #000;
+        }
+        .modal-content h2 {
+            color: #1a3a4f;
+            margin-bottom: 20px;
+        }
+        .modal-content h3 {
+            margin: 20px 0 10px;
+            color: #e63946;
+        }
+
+        @media (max-width: 700px) {
+            .hero h2 { font-size: 1.6rem; }
+            .price-badge { font-size: 1.3rem; }
+            .btn-whatsapp, .btn-grupo { font-size: 1rem; padding: 12px 20px; }
+        }
+    </style>
+</head>
+<body>
+
+<div class="top-bar">
+    🇧🇷 FRETE GRÁTIS PARA TODO BRASIL • A PARTIR DE 10 PEÇAS • ENVIO PARA TODO BRASIL
+</div>
+
+<div class="header">
+    <div class="logo-area">
+        <h1>FA <span>IMPORTS</span></h1>
+        <div class="tagline">⚽ PAIXÃO PELO SEU TIME • QUALIDADE PREMIUM 🇯🇵🇨🇳</div>
+    </div>
+</div>
+
+<div class="hero">
+    <h2>VISTA SEU TIME, MOSTRE SUA PAIXÃO!</h2>
+    <p>Camisas linha torcedor e jogador • Jaquetas esportivas • Tênis importados</p>
+    <div class="price-badge">
+        APARTIR DE R$ 54,90
+    </div>
+    <p class="highlight">🔰 QUALIDADE 1.1 • MESMO TECIDO DAS ORIGINAIS</p>
+</div>
+
+<div class="diferenciais">
+    <div class="card-diff"><div class="emoji">🛍️</div><h3>PREÇO DE ATACADO</h3><p>Compre direto da importação e economize</p></div>
+    <div class="card-diff"><div class="emoji">🧐</div><h3>QUALIDADE E CONFORTO</h3><p>Tecido premium, caimento perfeito</p></div>
+    <div class="card-diff"><div class="emoji">⚽</div><h3>LINHAS 1.1</h3><p>Torcedor e Jogador – você escolhe</p></div>
+    <div class="card-diff"><div class="emoji">📦🇧🇷</div><h3>FRETE GRÁTIS</h3><p>Para todo Brasil a partir de 10 peças</p></div>
+</div>
+
+<div class="produtos">
+    <h2>🔥 MAIS PEDIDOS</h2>
+    <div class="grid-produtos">
+        <!-- Camisa Brasil com bandeira antiga (placeholder visual) -->
+        <div class="prod-item">
+            <div class="prod-img">🇧🇷</div>
+            <h4>Camisa Brasil</h4>
+            <p>Seleção Canarinho - Linha Jogador</p>
+            <button class="btn-comprar" onclick="window.open('https://wa.me/5511959550781?text=Olá! Quero comprar a CAMISA BRASIL')">Pedir via WhatsApp</button>
+        </div>
+        
+        <div class="prod-item">
+            <div class="prod-img">🇦🇷</div>
+            <h4>Camisa Argentina</h4>
+            <p>Edição Copa - Linha Torcedor</p>
+            <button class="btn-comprar" onclick="window.open('https://wa.me/5511959550781?text=Olá! Quero comprar CAMISA ARGENTINA')">Pedir via WhatsApp</button>
+        </div>
+        
+        <div class="prod-item">
+            <div class="prod-img">🧥</div>
+            <h4>Jaqueta Esportiva</h4>
+            <p>Modelos importados - Vários times</p>
+            <button class="btn-comprar" onclick="window.open('https://wa.me/5511959550781?text=Olá! Quero saber das JAQUETAS')">Pedir via WhatsApp</button>
+        </div>
+        
+        <div class="prod-item">
+            <div class="prod-img">👟</div>
+            <h4>Tênis Climacool</h4>
+            <p>Conforto e estilo - Originalidade</p>
+            <button class="btn-comprar" onclick="window.open('https://wa.me/5511959550781?text=Olá! Quero comprar TÊNIS IMPORTADO')">Pedir via WhatsApp</button>
+        </div>
+    </div>
+</div>
+
+<div class="cta-section">
+    <h3>⚡ GARANTA SEU PEDIDO HOJE MESMO</h3>
+    <p>Atendimento rápido, preço de atacado e entrega para todo Brasil</p>
+    <a href="https://wa.me/5511959550781?text=Olá! Quero comprar camisas no atacado" class="btn-whatsapp" target="_blank">💬 FALAR COM VENDAS (WHATSAPP)</a>
+    <a href="https://chat.whatsapp.com/JmFyMPfh83fFBY8b0qjkYa" class="btn-grupo" target="_blank">📢 ENTRAR NO GRUPO VIP DE OFERTAS</a>
+    <p style="margin-top: 20px; font-size: 0.9rem;">🔒 Promoções exclusivas todos os dias no grupo VIP</p>
+</div>
+
+<div class="original-content">
+    <h2>📌 Conteúdo original FA IMPORTS – Sobre nossos produtos</h2>
+    <p><strong>FA IMPORTS</strong> é referência na importação de <strong>camisas de futebol de alta qualidade</strong>, jaquetas e tênis esportivos das melhores fábricas da China e do mercado asiático. Trabalhamos com as linhas <strong>Torcedor (1.1) e Jogador (Premium)</strong>, garantindo o mesmo caimento, tecido e acabamento das versões originais, com preço justo.</p>
+    
+    <p>Nosso estoque inclui camisas de clubes nacionais (Flamengo, Corinthians, Palmeiras, São Paulo, Santos, Internacional, Grêmio, etc.), clubes internacionais (Real Madrid, Barcelona, PSG, Manchester City, Liverpool, Bayern, Juventus) e seleções como Brasil, Argentina, Alemanha, França, Inglaterra, Portugal e mais.</p>
+
+    <p>✔️ <strong>Por que comprar na FA IMPORTS?</strong><br>
+    - Preço de atacado desde a primeira peça.<br>
+    - Qualidade premium com garantia de satisfação.<br>
+    - Frete grátis para todo Brasil em compras acima de 10 unidades.<br>
+    - Envio via transportadora internacional + rastreio.<br>
+    - Grupo VIP no WhatsApp com ofertas diárias e lançamentos.</p>
+
+    <p>🔹 <strong>Atendimento personalizado:</strong> Tire suas dúvidas sobre tamanhos, modelos e disponibilidade diretamente com nosso time. Trabalhamos com vendas por atacado e varejo, sempre com o melhor custo-benefício do mercado.</p>
+    
+    <p><em>FA IMPORTS – + Estilo, + Qualidade, + Paixão pelo futebol!</em></p>
+</div>
+
+<footer>
+    <div class="legal-links">
+        <a onclick="openModal('privacidade')">Política de Privacidade</a> | 
+        <a onclick="openModal('termos')">Termos de Uso</a> | 
+        <a onclick="openModal('trocas')">Trocas e Devoluções</a> |
+        <a href="https://wa.me/5511959550781">Contato: (11) 95955-0781</a>
+    </div>
+    <p style="margin-top: 20px;">FA IMPORTS - CNPJ em processo | Todos os produtos são importados sob encomenda | © 2026 FA IMPORTS</p>
+    <p>Endereço para correspondência: São Paulo - SP | E-mail: contato@faimports.com.br</p>
+</footer>
+
+<div id="legalModal" class="modal">
+    <div class="modal-content">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <div id="modalBody"></div>
+    </div>
+</div>
+
+<script>
+    function openModal(type) {
+        const modal = document.getElementById('legalModal');
+        const modalBody = document.getElementById('modalBody');
+        
+        if(type === 'privacidade') {
+            modalBody.innerHTML = `
+                <h2>Política de Privacidade - FA IMPORTS</h2>
+                <p><strong>Última atualização:</strong> 30 de maio de 2026</p>
+                
+                <h3>1. Coleta de informações</h3>
+                <p>A FA IMPORTS coleta informações fornecidas voluntariamente pelos clientes através do WhatsApp, formulários de contato e grupo VIP, incluindo nome, telefone, endereço de entrega e dados de pagamento.</p>
+                
+                <h3>2. Uso das informações</h3>
+                <p>Utilizamos seus dados exclusivamente para: processar pedidos, realizar entregas, enviar atualizações de pedidos, ofertas promocionais (apenas para quem está no grupo VIP) e melhorar nosso atendimento.</p>
+                
+                <h3>3. Compartilhamento</h3>
+                <p>Não vendemos, alugamos ou compartilhamos seus dados pessoais com terceiros não relacionados à operação da loja. Apenas transportadoras e meios de pagamento têm acesso limitado aos dados necessários.</p>
+                
+                <h3>4. Segurança</h3>
+                <p>Adotamos práticas seguras de armazenamento. As conversas de WhatsApp são criptografadas ponta a ponta.</p>
+                
+                <h3>5. Seus direitos</h3>
+                <p>Você pode solicitar a exclusão de seus dados a qualquer momento pelo WhatsApp (11) 95955-0781.</p>
+                
+                <h3>6. Cookies</h3>
+                <p>Este site não utiliza cookies de rastreamento. Apenas funcionalidades básicas.</p>
+            `;
+        } else if(type === 'termos') {
+            modalBody.innerHTML = `
+                <h2>Termos de Uso - FA IMPORTS</h2>
+                <p><strong>Última atualização:</strong> 30 de maio de 2026</p>
+                
+                <h3>1. Sobre os produtos</h3>
+                <p>Todos os produtos comercializados pela FA IMPORTS são <strong>réplicas de alta qualidade (linha 1.1)</strong>, importadas da China e do mercado asiático. Não são produtos originais das marcas oficiais. O cliente declara estar ciente desta informação antes de realizar a compra.</p>
+                
+                <h3>2. Pedidos e pagamentos</h3>
+                <p>Os pedidos são realizados exclusivamente via WhatsApp. As formas de pagamento aceitas são: PIX, transferência bancária e boleto. Não trabalhamos com cartão de crédito no momento.</p>
+                
+                <h3>3. Prazos de entrega</h3>
+                <p>O prazo médio de entrega é de <strong>15 a 30 dias úteis</strong> após a confirmação do pagamento, devido à importação. O cliente recebe código de rastreio assim que o produto chega ao Brasil.</p>
+                
+                <h3>4. Frete grátis</h3>
+                <p>A promoção de frete grátis é válida para compras com <strong>10 ou mais peças</strong>, para todo o território brasileiro. Compras abaixo desse valor têm frete calculado individualmente.</p>
+                
+                <h3>5. Trocas e devoluções</h3>
+                <p>Trocas por tamanho são aceitas em até 7 dias após o recebimento, desde que o produto não tenha sido usado. O cliente arca com o frete de devolução. Não realizamos reembolso por desistência após o envio do produto da China.</p>
+                
+                <h3>6. Grupo VIP</h3>
+                <p>Ao entrar no grupo VIP do WhatsApp, você concorda em receber mensagens promocionais. Você pode sair do grupo a qualquer momento.</p>
+                
+                <h3>7. Responsabilidade</h3>
+                <p>A FA IMPORTS não se responsabiliza por atrasos causados pela alfândega ou transportadoras. Fornecemos rastreio e suporte para localização da mercadoria.</p>
+            `;
+        } else if(type === 'trocas') {
+            modalBody.innerHTML = `
+                <h2>Política de Trocas e Devoluções - FA IMPORTS</h2>
+                <p><strong>Última atualização:</strong> 30 de maio de 2026</p>
+                
+                <h3>1. Prazo para solicitar troca</h3>
+                <p>O cliente tem <strong>7 dias corridos</strong> a partir do recebimento do produto para solicitar troca por tamanho ou defeito de fabricação.</p>
+                
+                <h3>2. Condições para troca</h3>
+                <p>O produto deve estar sem uso, com etiquetas originais e na embalagem de envio. Produtos com manchas, odores ou sinais de uso não serão aceitos.</p>
+                
+                <h3>3. Como solicitar</h3>
+                <p>Envie mensagem para nosso WhatsApp (11) 95955-0781 com o número do pedido, fotos do produto e motivo da troca.</p>
+                
+                <h3>4. Custos da troca</h3>
+                <p><strong>Troca por tamanho:</strong> Cliente arca com o frete de devolução e reenvio.<br>
+                <strong>Troca por defeito:</strong> FA IMPORTS arca com os custos de frete (mediante análise de fotos/vídeo).</p>
+                
+                <h3>5. Devolução por desistência</h3>
+                <p>Após o produto ter sido enviado da China (geralmente 48h após o pagamento), não aceitamos desistência com reembolso integral, pois o produto já está em rota de importação. Nesse caso, o cliente pode solicitar um crédito para troca por outro produto.</p>
+                
+                <h3>6. Produtos com defeito</h3>
+                <p>Defeitos como costura solta, mancha na estampa ou tecido rasgado serão analisados individualmente. Oferecemos reenvio de uma nova peça ou desconto em compra futura.</p>
+                
+                <h3>7. Prazo para reenvio</h3>
+                <p>Após a confirmação da troca, o novo produto será enviado no próximo ciclo de importação (até 15 dias úteis).</p>
+            `;
+        }
+        
+        modal.style.display = 'block';
+    }
+    
+    function closeModal() {
+        document.getElementById('legalModal').style.display = 'none';
+    }
+    
+    window.onclick = function(event) {
+        const modal = document.getElementById('legalModal');
+        if(event.target === modal) {
+            modal.style.display = 'none';
+        }
+    }
+</script>
+
+</body>
+</html>
